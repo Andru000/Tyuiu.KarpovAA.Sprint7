@@ -11,6 +11,9 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Test
         [TestMethod]
         public void TestMethod1()
         {
+            DataService ds = new DataService();
+
+
         }
     }
 }
