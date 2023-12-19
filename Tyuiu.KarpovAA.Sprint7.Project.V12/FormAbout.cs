@@ -12,14 +12,14 @@ using System.IO;
 
 namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 {
-    public partial class FormMain : Form
+    public partial class FormAbout : Form
     {
-        public FormMain()
+        public FormAbout()
         {
             InitializeComponent();
         }
 
-        private void buttonDone_KAA_Click(object sender, EventArgs e)
+        private void buttonOK_KAA_Click(object sender, EventArgs e)
         {
 
         }

@@ -26,5 +26,5 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Lib
 
             return Math.Round(z / rows);
         }
-    }
+    } 
 }

@@ -22,6 +22,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Test
             bool wait = true;
 
             Assert.AreEqual(wait, fileex);
-        }
+        } 
     }
 }
