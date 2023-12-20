@@ -9,22 +9,29 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Lib
 {
     public class DataService
     {
-        public static double Ram(string[,] matrix)
+        public double RAM(string[,] path)
         {
-            int rows = matrix.GetUpperBound(0) + 1;
-            int columns = matrix.Length / rows;
-            double z = 0;
-
-            for (int i = 0; i < rows; i++)
+            double sum = 0;
+            for (int i = 1; i < path.GetLength(0); i++)
             {
-                for (int j = 0; j < columns; j++)
-                {
-                    z += Convert.ToDouble(matrix[i, 4]);
+                sum += Convert.ToDouble(path[i, 4]);
+            }
+            double average = sum / (path.GetLength(0) - 1);
+            return Math.Round(average, 2);
+        }
 
+        public double MaxCore(string[,] path)
+        {
+            double max = 0;
+            int columnIndex = 3;
+            for (int i = 1; i < path.GetLength(0); i++)
+            {
+                if (Convert.ToDouble(path[i, columnIndex]) > max)
+                {
+                    max = Convert.ToDouble(path[i, columnIndex]);
                 }
             }
-
-            return Math.Round(z / rows);
-        }
+            return max;
+        }     
     } 
 }
