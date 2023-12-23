@@ -9,29 +9,101 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Lib
 {
     public class DataService
     {
-        public double RAM(string[,] path)
+        public string[,] GetData(string path)
         {
-            double sum = 0;
-            for (int i = 1; i < path.GetLength(0); i++)
-            {
-                sum += Convert.ToDouble(path[i, 4]);
-            }
-            double average = sum / (path.GetLength(0) - 1);
-            return Math.Round(average, 2);
-        }
+            string fileData = File.ReadAllText(path, Encoding.GetEncoding(1251));
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
-        public double MaxCore(string[,] path)
-        {
-            double max = 0;
-            int columnIndex = 3;
-            for (int i = 1; i < path.GetLength(0); i++)
+            int rows = lines.Length;
+            int columns = lines[0].Split(';').Length;
+
+            string[,] arrayValues = new string[rows, columns];
+
+            for (int r = 0; r < rows; r++)
             {
-                if (Convert.ToDouble(path[i, columnIndex]) > max)
+                string[] line_r = lines[r].Split(';');
+                for (int c = 0; c < columns; c++)
                 {
-                    max = Convert.ToDouble(path[i, columnIndex]);
+                    arrayValues[r, c] = line_r[c];
                 }
             }
+            return arrayValues;
+        }
+        public double AverageValue(double[] arrayNumber)
+        {
+            double avg = arrayNumber.Average();
+            return avg;
+        }
+        public double MinValue(double[] arrayNumber)
+        {
+            double min = arrayNumber.Min();
+            return min;
+        }
+        public double MaxValue(double[] arrayNumber)
+        {
+            double max = arrayNumber.Max();
             return max;
-        }     
-    } 
+        }
+
+        public bool AddNewData(string path, string[] line)
+        {
+            bool completed = false;
+
+            string str = "";
+
+            for (int i = 0; i < line.Length; i++)
+            {
+                if (i != line.Length - 1)
+                {
+                    str = str + line[i] + ";";
+                }
+                else
+                {
+                    str = str + line[i];
+                }
+            }
+            File.AppendAllText(path, str + Environment.NewLine, Encoding.GetEncoding(1251));
+            completed = true;
+            return completed;
+        }
+
+        public bool UpdateData(string path, string[,] data)
+        {
+            bool completed = false;
+
+            File.WriteAllText(path, string.Empty);
+
+            string str = "";
+
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                for (int j = 0; j < data.GetLength(1); j++)
+                {
+                    if (j != data.GetLength(1) - 1)
+                    {
+                        str = str + data[i, j] + ";";
+                    }
+                    else
+                    {
+                        str = str + data[i, j];
+                    }
+                }
+
+                if (i != data.GetLength(0) - 1)
+                {
+                    File.AppendAllText(path, str + Environment.NewLine, Encoding.GetEncoding(1251));
+                }
+                else
+                {
+                    File.AppendAllText(path, str + Environment.NewLine, Encoding.GetEncoding(1251));
+                }
+
+                str = "";
+            }
+
+            completed = true;
+            return completed;
+        }
+    }
 }

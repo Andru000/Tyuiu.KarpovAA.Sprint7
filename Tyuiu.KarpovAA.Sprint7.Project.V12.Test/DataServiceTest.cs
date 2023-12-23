@@ -8,57 +8,80 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Test
     [TestClass]
     public class DataServiceTest
     {
-        
-        DataService ds = new DataService();
-
-
         [TestMethod]
-        public void Check()
+        public void ValidGetData()
         {
-            string path = @"C:\Users\karpo\source\repos\Tyuiu.KarpovAA.Sprint7\Tyuiu.KarpovAA.Sprint7.Project.V12\bin\Debug\OutPutIVM.csv";
-            FileInfo fileinfo = new FileInfo(path);
-            bool fileex = fileinfo.Exists;
-            bool wait = true;
-            Assert.AreEqual(wait, fileex);
+            DataService ds = new DataService();
 
+            string path = @"C:\Users";
+            string[,] res = ds.GetData(path);
+
+            string[,] wait = {
+                { "MSI", "AMD Ryzen 5 3600", "8", "3,5", "16", "1000", "01.01.2020", "40 000,00" },
+                { "ASUS", "AMD Ryzen 7 1600", "6", "3,7", "16", "1000", "09.10.2015", "35 000,00" }
+            };
+
+            CollectionAssert.AreEqual(wait, res);
         }
-
-        string filePath = @"C:\Users\karpo\source\repos\Tyuiu.KarpovAA.Sprint7\Tyuiu.KarpovAA.Sprint7.Project.V12\bin\Debug\OutPutIVM.csv";
-
-        public static string[,] LoadFromFileData(string filePath)
-        {
-            string fileData = File.ReadAllText(filePath);
-            fileData = fileData.Replace('\n', '\r');
-            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
-            int rows = lines.Length;
-            int columns = lines[0].Split(';').Length;
-            string[,] arrayValues = new string[rows, columns];
-
-            for (int r = 0; r < rows; r++)
-            {
-                string[] line_r = lines[r].Split(';');
-                for (int c = 0; c < columns; c++)
-                {
-                    arrayValues[r, c] = line_r[c];
-                }
-            }
-
-            return arrayValues;
-        }
-
         [TestMethod]
-        public void CheckOZU()
+        public void ValidAverageValue()
         {
-            double wait = 11.33;
-            double res = ds.RAM(LoadFromFileData(filePath));
+            DataService ds = new DataService();
+
+            double[] arrayNums = { 1, 2, 3 };
+
+            double res = ds.AverageValue(arrayNums);
+
+            double wait = 2;
+
+            Assert.AreEqual(wait, res);
+        }
+        [TestMethod]
+        public void ValidMinValue()
+        {
+            DataService ds = new DataService();
+
+            double[] arrayNums = { 1, 2, 3 };
+
+            double res = ds.MinValue(arrayNums);
+
+            double wait = 1;
+
+            Assert.AreEqual(wait, res);
+        }
+        [TestMethod]
+        public void ValidMaxValue()
+        {
+            DataService ds = new DataService();
+
+            double[] arrayNums = { 1, 2, 3 };
+
+            double res = ds.MaxValue(arrayNums);
+
+            double wait = 3;
+
             Assert.AreEqual(wait, res);
         }
 
         [TestMethod]
-        public void CheckMAX()
+        public void ValidUpdateData()
         {
-            double wait = 11;
-            double res = ds.MaxCore(LoadFromFileData(filePath));
+            DataService ds = new DataService();
+
+            string path = @"C:\Users";
+
+            string[,] data = {
+                { "AKA", "AKA", "AKA" },
+                { "AKA", "AKA", "AKA" },
+                { "AKA", "AKA", "AKA" },
+                { "AKA", "AKA", "AKA" },
+                { "AKA", "AKA", "AKA" }
+            };
+
+            bool res = ds.UpdateData(path, data);
+
+            bool wait = true;
+
             Assert.AreEqual(wait, res);
         }
     }

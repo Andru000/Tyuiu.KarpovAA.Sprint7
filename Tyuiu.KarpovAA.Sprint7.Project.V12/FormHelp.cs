@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyuiu.KarpovAA.Sprint7.Project.V12.Lib;
-using System.IO;
 
 namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 {
-    public partial class FormAbout : Form
+    public partial class FormHelp : Form
     {
-        public FormAbout()
+        public FormHelp()
         {
             InitializeComponent();
-        }
-
-        private void buttonOK_KAA_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
