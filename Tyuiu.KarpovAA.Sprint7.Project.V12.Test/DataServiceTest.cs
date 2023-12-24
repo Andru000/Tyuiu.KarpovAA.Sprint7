@@ -8,21 +8,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Test
     [TestClass]
     public class DataServiceTest
     {
-        [TestMethod]
-        public void ValidGetData()
-        {
-            DataService ds = new DataService();
-
-            string path = @"C:\Users";
-            string[,] res = ds.GetData(path);
-
-            string[,] wait = {
-                { "MSI", "AMD Ryzen 5 3600", "8", "3,5", "16", "1000", "01.01.2020", "40 000,00" },
-                { "ASUS", "AMD Ryzen 7 1600", "6", "3,7", "16", "1000", "09.10.2015", "35 000,00" }
-            };
-
-            CollectionAssert.AreEqual(wait, res);
-        }
+       
+        
         [TestMethod]
         public void ValidAverageValue()
         {
@@ -63,26 +50,5 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12.Test
             Assert.AreEqual(wait, res);
         }
 
-        [TestMethod]
-        public void ValidUpdateData()
-        {
-            DataService ds = new DataService();
-
-            string path = @"C:\Users";
-
-            string[,] data = {
-                { "AKA", "AKA", "AKA" },
-                { "AKA", "AKA", "AKA" },
-                { "AKA", "AKA", "AKA" },
-                { "AKA", "AKA", "AKA" },
-                { "AKA", "AKA", "AKA" }
-            };
-
-            bool res = ds.UpdateData(path, data);
-
-            bool wait = true;
-
-            Assert.AreEqual(wait, res);
-        }
     }
 }

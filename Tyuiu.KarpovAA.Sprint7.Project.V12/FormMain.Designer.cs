@@ -248,10 +248,13 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // 
             // dateTimePickerRelease_KAA
             // 
-            this.dateTimePickerRelease_KAA.Location = new System.Drawing.Point(0, 407);
+            this.dateTimePickerRelease_KAA.CustomFormat = "";
+            this.dateTimePickerRelease_KAA.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerRelease_KAA.Location = new System.Drawing.Point(3, 407);
             this.dateTimePickerRelease_KAA.Name = "dateTimePickerRelease_KAA";
-            this.dateTimePickerRelease_KAA.Size = new System.Drawing.Size(120, 20);
+            this.dateTimePickerRelease_KAA.Size = new System.Drawing.Size(104, 20);
             this.dateTimePickerRelease_KAA.TabIndex = 18;
+            this.dateTimePickerRelease_KAA.Value = new System.DateTime(2023, 12, 23, 0, 0, 0, 0);
             // 
             // labelPrice_KAA
             // 
@@ -369,7 +372,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // 
             // textBoxPhoneNumber_KAA
             // 
-            this.textBoxPhoneNumber_KAA.Location = new System.Drawing.Point(0, 407);
+            this.textBoxPhoneNumber_KAA.Location = new System.Drawing.Point(3, 407);
             this.textBoxPhoneNumber_KAA.Name = "textBoxPhoneNumber_KAA";
             this.textBoxPhoneNumber_KAA.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhoneNumber_KAA.TabIndex = 36;
