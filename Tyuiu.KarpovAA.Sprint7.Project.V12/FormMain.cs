@@ -18,38 +18,24 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 
         public FormMain()
         {
-            InitializeComponent();
-            //openFileDialogTable_PAA.Filter = "Значения, разделённые запятыми(*.csv)|*csv|Все файлы(*.*)|*.*";
-            //saveFileDialogNewData_PAA.Filter = "Значения, разделённые запятыми(*.csv)|*csv|Все файлы(*.*)|*.*";
+            InitializeComponent();          
             dateTimePickerRelease_KAA.CustomFormat = "DD MM YYYY";
         }
 
         DataService ds = new DataService();
         
-
         string pathPC = @"C:..\IVM.csv";
-        string pathSeller = @"..\IVM.csv";
-
-        private void toolStripButtonInfoProgram_KAA_Click(object sender, EventArgs e)
-        {
-            FormAbout info = new FormAbout();
-            info.ShowDialog();
-
-        }
-
-       
+        string pathSeller = @"..\Distributors.csv";
 
         private void buttonDone_KAA_Click(object sender, EventArgs e)
         {
             
             dataGridViewIVM_KAA.Visible = true;
             dataGridViewDistributors_KAA.Visible = false;
-
             labelSearch_KAA.Visible = true;
             textBoxFind_KAA.Visible = true;
             buttonFind_KAA.Visible = true;
             buttonFindDistributors_KAA.Visible = false;
-
             textBoxDistributor_KAA.Visible = true;
             textBoxSpeed_KAA.Visible = true;
             textBoxROM_KAA.Visible = true;
@@ -69,7 +55,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             labelPrice_KAA.Visible = true;
             labelCPU_KAA.Visible = true;
             labelRelease_KAA.Visible = true;
-
             dataGridViewDistributors_KAA.Visible = false;
             textBoxSeller_KAA.Visible = false;
             textBoxPhoneNumber_KAA.Visible = false;
@@ -81,9 +66,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             labelNameSeller_KAA.Visible = false;
             labelPhoneNumber_KAA.Visible = false;
             labelURL_KAA.Visible = false;
-
-
             textBoxTitle_KAA.Text = "Электронно-вычислительные машины";
+
             try
             {
 
@@ -152,17 +136,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             }
         }
 
-
-       
-
-        
-
-
-      
-
-
-
-
         private void buttonHelp_KAA_Click(object sender, EventArgs e)
         {
             FormHelp info = new FormHelp();
@@ -174,12 +147,10 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 
             dataGridViewIVM_KAA.Visible = false;
             dataGridViewDistributors_KAA.Visible = true;
-
             labelSearch_KAA.Visible = true;
             textBoxFind_KAA.Visible = true;
             buttonFind_KAA.Visible = false;
             buttonFindDistributors_KAA.Visible = true;
-
             textBoxDistributor_KAA.Visible = false;
             textBoxSpeed_KAA.Visible = false;
             textBoxROM_KAA.Visible = false;
@@ -199,7 +170,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             labelPrice_KAA.Visible = false;
             labelCPU_KAA.Visible = false;
             labelRelease_KAA.Visible = false;
-
             dataGridViewDistributors_KAA.Visible = true;
             textBoxSeller_KAA.Visible = true;
             textBoxPhoneNumber_KAA.Visible = true;
@@ -211,8 +181,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             labelNameSeller_KAA.Visible = true;
             labelPhoneNumber_KAA.Visible = true;
             labelURL_KAA.Visible = true;
-
             textBoxTitle_KAA.Text = "Фирмы-реализаторы";
+
             try
             {
 

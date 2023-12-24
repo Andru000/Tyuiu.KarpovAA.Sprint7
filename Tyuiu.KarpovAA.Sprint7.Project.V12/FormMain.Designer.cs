@@ -35,7 +35,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonDistributors_KAA = new System.Windows.Forms.Button();
             this.toolTip_KAA = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog_KAA = new System.Windows.Forms.SaveFileDialog();
-            this.buttonHelp_KAA = new System.Windows.Forms.Button();
             this.buttonFind_KAA = new System.Windows.Forms.Button();
             this.buttonAddDistributor_KAA = new System.Windows.Forms.Button();
             this.buttonStats_KAA = new System.Windows.Forms.Button();
@@ -44,56 +43,56 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonSaveIVM_KAA = new System.Windows.Forms.Button();
             this.buttonFindDistributors_KAA = new System.Windows.Forms.Button();
             this.panelFull_KAA = new System.Windows.Forms.Panel();
-            this.dataGridViewDistributors_KAA = new System.Windows.Forms.DataGridView();
-            this.dateTimePickerRelease_KAA = new System.Windows.Forms.DateTimePicker();
-            this.labelSearch_KAA = new System.Windows.Forms.Label();
-            this.textBoxSeller_KAA = new System.Windows.Forms.TextBox();
-            this.textBoxSpeed_KAA = new System.Windows.Forms.TextBox();
-            this.textBoxROM_KAA = new System.Windows.Forms.TextBox();
-            this.textBoxCPU_KAA = new System.Windows.Forms.TextBox();
             this.textBoxPrice_KAA = new System.Windows.Forms.TextBox();
-            this.textBoxAddress_KAA = new System.Windows.Forms.TextBox();
-            this.numericUpDownCore_KAA = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownRAM_KAA = new System.Windows.Forms.NumericUpDown();
-            this.labelROM_KAA = new System.Windows.Forms.Label();
-            this.labelCore_KAA = new System.Windows.Forms.Label();
-            this.labelRAM_KAA = new System.Windows.Forms.Label();
-            this.textBoxDistributor_KAA = new System.Windows.Forms.TextBox();
-            this.labelDistributor_KAA = new System.Windows.Forms.Label();
+            this.dateTimePickerRelease_KAA = new System.Windows.Forms.DateTimePicker();
             this.labelPrice_KAA = new System.Windows.Forms.Label();
-            this.labelCPU_KAA = new System.Windows.Forms.Label();
             this.labelRelease_KAA = new System.Windows.Forms.Label();
-            this.textBoxPhoneNumber_KAA = new System.Windows.Forms.TextBox();
-            this.textBoxURL_KAA = new System.Windows.Forms.TextBox();
-            this.labelAddress_KAA = new System.Windows.Forms.Label();
-            this.labelNameSeller_KAA = new System.Windows.Forms.Label();
-            this.labelPhoneNumber_KAA = new System.Windows.Forms.Label();
-            this.labelURL_KAA = new System.Windows.Forms.Label();
-            this.labelSpeed_KAA = new System.Windows.Forms.Label();
+            this.textBoxROM_KAA = new System.Windows.Forms.TextBox();
+            this.labelROM_KAA = new System.Windows.Forms.Label();
+            this.labelRAM_KAA = new System.Windows.Forms.Label();
             this.textBoxTitle_KAA = new System.Windows.Forms.TextBox();
+            this.labelSpeed_KAA = new System.Windows.Forms.Label();
+            this.labelURL_KAA = new System.Windows.Forms.Label();
+            this.labelPhoneNumber_KAA = new System.Windows.Forms.Label();
+            this.labelNameSeller_KAA = new System.Windows.Forms.Label();
+            this.labelAddress_KAA = new System.Windows.Forms.Label();
+            this.textBoxURL_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxPhoneNumber_KAA = new System.Windows.Forms.TextBox();
+            this.labelCPU_KAA = new System.Windows.Forms.Label();
+            this.labelDistributor_KAA = new System.Windows.Forms.Label();
+            this.textBoxDistributor_KAA = new System.Windows.Forms.TextBox();
+            this.labelCore_KAA = new System.Windows.Forms.Label();
+            this.numericUpDownRAM_KAA = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownCore_KAA = new System.Windows.Forms.NumericUpDown();
+            this.textBoxAddress_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxCPU_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxSpeed_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxSeller_KAA = new System.Windows.Forms.TextBox();
+            this.labelSearch_KAA = new System.Windows.Forms.Label();
+            this.dataGridViewDistributors_KAA = new System.Windows.Forms.DataGridView();
             this.buttonDone_KAA = new System.Windows.Forms.Button();
             this.buttonInfo_KAA = new System.Windows.Forms.Button();
+            this.buttonHelp_KAA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVM_KAA)).BeginInit();
             this.panelFull_KAA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistributors_KAA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCore_KAA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRAM_KAA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCore_KAA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistributors_KAA)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewIVM_KAA
             // 
             this.dataGridViewIVM_KAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewIVM_KAA.ColumnHeadersVisible = false;
             this.dataGridViewIVM_KAA.Location = new System.Drawing.Point(145, 71);
             this.dataGridViewIVM_KAA.Name = "dataGridViewIVM_KAA";
-            this.dataGridViewIVM_KAA.RowHeadersVisible = false;
-            this.dataGridViewIVM_KAA.Size = new System.Drawing.Size(916, 426);
+            this.dataGridViewIVM_KAA.Size = new System.Drawing.Size(916, 428);
             this.dataGridViewIVM_KAA.TabIndex = 1;
             // 
             // textBoxFind_KAA
             // 
             this.textBoxFind_KAA.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBoxFind_KAA.Location = new System.Drawing.Point(380, 503);
+            this.textBoxFind_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.textBoxFind_KAA.Location = new System.Drawing.Point(438, 509);
             this.textBoxFind_KAA.Multiline = true;
             this.textBoxFind_KAA.Name = "textBoxFind_KAA";
             this.textBoxFind_KAA.Size = new System.Drawing.Size(379, 42);
@@ -112,24 +111,11 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonDistributors_KAA.UseVisualStyleBackColor = false;
             this.buttonDistributors_KAA.Click += new System.EventHandler(this.buttonDistributors_KAA_Click);
             // 
-            // buttonHelp_KAA
-            // 
-            this.buttonHelp_KAA.BackColor = System.Drawing.Color.Blue;
-            this.buttonHelp_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.buttonHelp_KAA.ForeColor = System.Drawing.Color.AliceBlue;
-            this.buttonHelp_KAA.Location = new System.Drawing.Point(1099, 255);
-            this.buttonHelp_KAA.Name = "buttonHelp_KAA";
-            this.buttonHelp_KAA.Size = new System.Drawing.Size(119, 99);
-            this.buttonHelp_KAA.TabIndex = 9;
-            this.buttonHelp_KAA.Text = "HELP";
-            this.buttonHelp_KAA.UseVisualStyleBackColor = false;
-            this.buttonHelp_KAA.Click += new System.EventHandler(this.buttonHelp_KAA_Click);
-            // 
             // buttonFind_KAA
             // 
             this.buttonFind_KAA.BackColor = System.Drawing.Color.Gray;
             this.buttonFind_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonFind_KAA.Location = new System.Drawing.Point(890, 503);
+            this.buttonFind_KAA.Location = new System.Drawing.Point(823, 507);
             this.buttonFind_KAA.Name = "buttonFind_KAA";
             this.buttonFind_KAA.Size = new System.Drawing.Size(117, 42);
             this.buttonFind_KAA.TabIndex = 10;
@@ -195,7 +181,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // buttonFindDistributors_KAA
             // 
             this.buttonFindDistributors_KAA.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonFindDistributors_KAA.Location = new System.Drawing.Point(776, 509);
+            this.buttonFindDistributors_KAA.Location = new System.Drawing.Point(823, 515);
             this.buttonFindDistributors_KAA.Name = "buttonFindDistributors_KAA";
             this.buttonFindDistributors_KAA.Size = new System.Drawing.Size(108, 30);
             this.buttonFindDistributors_KAA.TabIndex = 16;
@@ -253,61 +239,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.panelFull_KAA.TabIndex = 17;
             this.panelFull_KAA.Tag = "";
             // 
-            // dataGridViewDistributors_KAA
-            // 
-            this.dataGridViewDistributors_KAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDistributors_KAA.ColumnHeadersVisible = false;
-            this.dataGridViewDistributors_KAA.Location = new System.Drawing.Point(145, 71);
-            this.dataGridViewDistributors_KAA.Name = "dataGridViewDistributors_KAA";
-            this.dataGridViewDistributors_KAA.RowHeadersVisible = false;
-            this.dataGridViewDistributors_KAA.Size = new System.Drawing.Size(916, 426);
-            this.dataGridViewDistributors_KAA.TabIndex = 17;
-            // 
-            // dateTimePickerRelease_KAA
-            // 
-            this.dateTimePickerRelease_KAA.Location = new System.Drawing.Point(0, 407);
-            this.dateTimePickerRelease_KAA.Name = "dateTimePickerRelease_KAA";
-            this.dateTimePickerRelease_KAA.Size = new System.Drawing.Size(120, 20);
-            this.dateTimePickerRelease_KAA.TabIndex = 18;
-            // 
-            // labelSearch_KAA
-            // 
-            this.labelSearch_KAA.AutoSize = true;
-            this.labelSearch_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.labelSearch_KAA.Location = new System.Drawing.Point(522, 475);
-            this.labelSearch_KAA.Name = "labelSearch_KAA";
-            this.labelSearch_KAA.Size = new System.Drawing.Size(75, 25);
-            this.labelSearch_KAA.TabIndex = 19;
-            this.labelSearch_KAA.Text = "Найти:";
-            // 
-            // textBoxSeller_KAA
-            // 
-            this.textBoxSeller_KAA.Location = new System.Drawing.Point(3, 293);
-            this.textBoxSeller_KAA.Name = "textBoxSeller_KAA";
-            this.textBoxSeller_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSeller_KAA.TabIndex = 20;
-            // 
-            // textBoxSpeed_KAA
-            // 
-            this.textBoxSpeed_KAA.Location = new System.Drawing.Point(3, 234);
-            this.textBoxSpeed_KAA.Name = "textBoxSpeed_KAA";
-            this.textBoxSpeed_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSpeed_KAA.TabIndex = 21;
-            // 
-            // textBoxROM_KAA
-            // 
-            this.textBoxROM_KAA.Location = new System.Drawing.Point(3, 357);
-            this.textBoxROM_KAA.Name = "textBoxROM_KAA";
-            this.textBoxROM_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxROM_KAA.TabIndex = 22;
-            // 
-            // textBoxCPU_KAA
-            // 
-            this.textBoxCPU_KAA.Location = new System.Drawing.Point(3, 93);
-            this.textBoxCPU_KAA.Name = "textBoxCPU_KAA";
-            this.textBoxCPU_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCPU_KAA.TabIndex = 23;
-            // 
             // textBoxPrice_KAA
             // 
             this.textBoxPrice_KAA.Location = new System.Drawing.Point(3, 462);
@@ -315,74 +246,12 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.textBoxPrice_KAA.Size = new System.Drawing.Size(100, 20);
             this.textBoxPrice_KAA.TabIndex = 24;
             // 
-            // textBoxAddress_KAA
+            // dateTimePickerRelease_KAA
             // 
-            this.textBoxAddress_KAA.Location = new System.Drawing.Point(3, 357);
-            this.textBoxAddress_KAA.Name = "textBoxAddress_KAA";
-            this.textBoxAddress_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAddress_KAA.TabIndex = 25;
-            // 
-            // numericUpDownCore_KAA
-            // 
-            this.numericUpDownCore_KAA.Location = new System.Drawing.Point(3, 168);
-            this.numericUpDownCore_KAA.Name = "numericUpDownCore_KAA";
-            this.numericUpDownCore_KAA.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDownCore_KAA.TabIndex = 26;
-            // 
-            // numericUpDownRAM_KAA
-            // 
-            this.numericUpDownRAM_KAA.Location = new System.Drawing.Point(3, 293);
-            this.numericUpDownRAM_KAA.Name = "numericUpDownRAM_KAA";
-            this.numericUpDownRAM_KAA.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDownRAM_KAA.TabIndex = 27;
-            // 
-            // labelROM_KAA
-            // 
-            this.labelROM_KAA.AutoSize = true;
-            this.labelROM_KAA.BackColor = System.Drawing.Color.MintCream;
-            this.labelROM_KAA.Location = new System.Drawing.Point(3, 341);
-            this.labelROM_KAA.Name = "labelROM_KAA";
-            this.labelROM_KAA.Size = new System.Drawing.Size(72, 13);
-            this.labelROM_KAA.TabIndex = 28;
-            this.labelROM_KAA.Text = "Объем HDD:";
-            // 
-            // labelCore_KAA
-            // 
-            this.labelCore_KAA.AutoSize = true;
-            this.labelCore_KAA.BackColor = System.Drawing.Color.MintCream;
-            this.labelCore_KAA.Location = new System.Drawing.Point(3, 152);
-            this.labelCore_KAA.Name = "labelCore_KAA";
-            this.labelCore_KAA.Size = new System.Drawing.Size(36, 13);
-            this.labelCore_KAA.TabIndex = 29;
-            this.labelCore_KAA.Tag = "";
-            this.labelCore_KAA.Text = "Ядра:";
-            // 
-            // labelRAM_KAA
-            // 
-            this.labelRAM_KAA.AutoSize = true;
-            this.labelRAM_KAA.BackColor = System.Drawing.Color.MintCream;
-            this.labelRAM_KAA.Location = new System.Drawing.Point(3, 277);
-            this.labelRAM_KAA.Name = "labelRAM_KAA";
-            this.labelRAM_KAA.Size = new System.Drawing.Size(117, 13);
-            this.labelRAM_KAA.TabIndex = 30;
-            this.labelRAM_KAA.Text = "Оперативная память:";
-            // 
-            // textBoxDistributor_KAA
-            // 
-            this.textBoxDistributor_KAA.Location = new System.Drawing.Point(3, 28);
-            this.textBoxDistributor_KAA.Name = "textBoxDistributor_KAA";
-            this.textBoxDistributor_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDistributor_KAA.TabIndex = 31;
-            // 
-            // labelDistributor_KAA
-            // 
-            this.labelDistributor_KAA.AutoSize = true;
-            this.labelDistributor_KAA.BackColor = System.Drawing.Color.MintCream;
-            this.labelDistributor_KAA.Location = new System.Drawing.Point(3, 12);
-            this.labelDistributor_KAA.Name = "labelDistributor_KAA";
-            this.labelDistributor_KAA.Size = new System.Drawing.Size(89, 13);
-            this.labelDistributor_KAA.TabIndex = 32;
-            this.labelDistributor_KAA.Text = "Производитель:";
+            this.dateTimePickerRelease_KAA.Location = new System.Drawing.Point(0, 407);
+            this.dateTimePickerRelease_KAA.Name = "dateTimePickerRelease_KAA";
+            this.dateTimePickerRelease_KAA.Size = new System.Drawing.Size(120, 20);
+            this.dateTimePickerRelease_KAA.TabIndex = 18;
             // 
             // labelPrice_KAA
             // 
@@ -395,16 +264,6 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.labelPrice_KAA.TabIndex = 33;
             this.labelPrice_KAA.Text = "Цена:";
             // 
-            // labelCPU_KAA
-            // 
-            this.labelCPU_KAA.AutoSize = true;
-            this.labelCPU_KAA.BackColor = System.Drawing.Color.MintCream;
-            this.labelCPU_KAA.Location = new System.Drawing.Point(3, 77);
-            this.labelCPU_KAA.Name = "labelCPU_KAA";
-            this.labelCPU_KAA.Size = new System.Drawing.Size(66, 13);
-            this.labelCPU_KAA.TabIndex = 34;
-            this.labelCPU_KAA.Text = "Процессор:";
-            // 
             // labelRelease_KAA
             // 
             this.labelRelease_KAA.AutoSize = true;
@@ -416,55 +275,44 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.labelRelease_KAA.TabIndex = 35;
             this.labelRelease_KAA.Text = "Дата выпуска:";
             // 
-            // textBoxPhoneNumber_KAA
+            // textBoxROM_KAA
             // 
-            this.textBoxPhoneNumber_KAA.Location = new System.Drawing.Point(0, 407);
-            this.textBoxPhoneNumber_KAA.Name = "textBoxPhoneNumber_KAA";
-            this.textBoxPhoneNumber_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPhoneNumber_KAA.TabIndex = 36;
+            this.textBoxROM_KAA.Location = new System.Drawing.Point(3, 357);
+            this.textBoxROM_KAA.Name = "textBoxROM_KAA";
+            this.textBoxROM_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxROM_KAA.TabIndex = 22;
             // 
-            // textBoxURL_KAA
+            // labelROM_KAA
             // 
-            this.textBoxURL_KAA.Location = new System.Drawing.Point(3, 462);
-            this.textBoxURL_KAA.Name = "textBoxURL_KAA";
-            this.textBoxURL_KAA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxURL_KAA.TabIndex = 37;
+            this.labelROM_KAA.AutoSize = true;
+            this.labelROM_KAA.BackColor = System.Drawing.Color.MintCream;
+            this.labelROM_KAA.Location = new System.Drawing.Point(3, 341);
+            this.labelROM_KAA.Name = "labelROM_KAA";
+            this.labelROM_KAA.Size = new System.Drawing.Size(72, 13);
+            this.labelROM_KAA.TabIndex = 28;
+            this.labelROM_KAA.Text = "Объем HDD:";
             // 
-            // labelAddress_KAA
+            // labelRAM_KAA
             // 
-            this.labelAddress_KAA.AutoSize = true;
-            this.labelAddress_KAA.Location = new System.Drawing.Point(5, 341);
-            this.labelAddress_KAA.Name = "labelAddress_KAA";
-            this.labelAddress_KAA.Size = new System.Drawing.Size(41, 13);
-            this.labelAddress_KAA.TabIndex = 38;
-            this.labelAddress_KAA.Text = "Адрес:";
+            this.labelRAM_KAA.AutoSize = true;
+            this.labelRAM_KAA.BackColor = System.Drawing.Color.MintCream;
+            this.labelRAM_KAA.Location = new System.Drawing.Point(3, 277);
+            this.labelRAM_KAA.Name = "labelRAM_KAA";
+            this.labelRAM_KAA.Size = new System.Drawing.Size(117, 13);
+            this.labelRAM_KAA.TabIndex = 30;
+            this.labelRAM_KAA.Text = "Оперативная память:";
             // 
-            // labelNameSeller_KAA
+            // textBoxTitle_KAA
             // 
-            this.labelNameSeller_KAA.AutoSize = true;
-            this.labelNameSeller_KAA.Location = new System.Drawing.Point(3, 277);
-            this.labelNameSeller_KAA.Name = "labelNameSeller_KAA";
-            this.labelNameSeller_KAA.Size = new System.Drawing.Size(86, 13);
-            this.labelNameSeller_KAA.TabIndex = 39;
-            this.labelNameSeller_KAA.Text = "Наименование:";
-            // 
-            // labelPhoneNumber_KAA
-            // 
-            this.labelPhoneNumber_KAA.AutoSize = true;
-            this.labelPhoneNumber_KAA.Location = new System.Drawing.Point(0, 391);
-            this.labelPhoneNumber_KAA.Name = "labelPhoneNumber_KAA";
-            this.labelPhoneNumber_KAA.Size = new System.Drawing.Size(96, 13);
-            this.labelPhoneNumber_KAA.TabIndex = 40;
-            this.labelPhoneNumber_KAA.Text = "Номер телефона:";
-            // 
-            // labelURL_KAA
-            // 
-            this.labelURL_KAA.AutoSize = true;
-            this.labelURL_KAA.Location = new System.Drawing.Point(5, 446);
-            this.labelURL_KAA.Name = "labelURL_KAA";
-            this.labelURL_KAA.Size = new System.Drawing.Size(49, 13);
-            this.labelURL_KAA.TabIndex = 41;
-            this.labelURL_KAA.Text = "Ссылка:";
+            this.textBoxTitle_KAA.BackColor = System.Drawing.Color.SkyBlue;
+            this.textBoxTitle_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.textBoxTitle_KAA.Location = new System.Drawing.Point(1067, 446);
+            this.textBoxTitle_KAA.Multiline = true;
+            this.textBoxTitle_KAA.Name = "textBoxTitle_KAA";
+            this.textBoxTitle_KAA.ReadOnly = true;
+            this.textBoxTitle_KAA.Size = new System.Drawing.Size(178, 93);
+            this.textBoxTitle_KAA.TabIndex = 43;
+            this.textBoxTitle_KAA.Text = "Электронно-вычислительные машины";
             // 
             // labelSpeed_KAA
             // 
@@ -476,16 +324,153 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.labelSpeed_KAA.TabIndex = 42;
             this.labelSpeed_KAA.Text = "Частота процессора:";
             // 
-            // textBoxTitle_KAA
+            // labelURL_KAA
             // 
-            this.textBoxTitle_KAA.BackColor = System.Drawing.Color.SkyBlue;
-            this.textBoxTitle_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.textBoxTitle_KAA.Location = new System.Drawing.Point(1067, 446);
-            this.textBoxTitle_KAA.Multiline = true;
-            this.textBoxTitle_KAA.Name = "textBoxTitle_KAA";
-            this.textBoxTitle_KAA.Size = new System.Drawing.Size(178, 93);
-            this.textBoxTitle_KAA.TabIndex = 43;
-            this.textBoxTitle_KAA.Text = "Электронно-вычислительные машины";
+            this.labelURL_KAA.AutoSize = true;
+            this.labelURL_KAA.Location = new System.Drawing.Point(5, 446);
+            this.labelURL_KAA.Name = "labelURL_KAA";
+            this.labelURL_KAA.Size = new System.Drawing.Size(49, 13);
+            this.labelURL_KAA.TabIndex = 41;
+            this.labelURL_KAA.Text = "Ссылка:";
+            // 
+            // labelPhoneNumber_KAA
+            // 
+            this.labelPhoneNumber_KAA.AutoSize = true;
+            this.labelPhoneNumber_KAA.Location = new System.Drawing.Point(0, 391);
+            this.labelPhoneNumber_KAA.Name = "labelPhoneNumber_KAA";
+            this.labelPhoneNumber_KAA.Size = new System.Drawing.Size(96, 13);
+            this.labelPhoneNumber_KAA.TabIndex = 40;
+            this.labelPhoneNumber_KAA.Text = "Номер телефона:";
+            // 
+            // labelNameSeller_KAA
+            // 
+            this.labelNameSeller_KAA.AutoSize = true;
+            this.labelNameSeller_KAA.Location = new System.Drawing.Point(3, 277);
+            this.labelNameSeller_KAA.Name = "labelNameSeller_KAA";
+            this.labelNameSeller_KAA.Size = new System.Drawing.Size(86, 13);
+            this.labelNameSeller_KAA.TabIndex = 39;
+            this.labelNameSeller_KAA.Text = "Наименование:";
+            // 
+            // labelAddress_KAA
+            // 
+            this.labelAddress_KAA.AutoSize = true;
+            this.labelAddress_KAA.Location = new System.Drawing.Point(5, 341);
+            this.labelAddress_KAA.Name = "labelAddress_KAA";
+            this.labelAddress_KAA.Size = new System.Drawing.Size(41, 13);
+            this.labelAddress_KAA.TabIndex = 38;
+            this.labelAddress_KAA.Text = "Адрес:";
+            // 
+            // textBoxURL_KAA
+            // 
+            this.textBoxURL_KAA.Location = new System.Drawing.Point(3, 462);
+            this.textBoxURL_KAA.Name = "textBoxURL_KAA";
+            this.textBoxURL_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxURL_KAA.TabIndex = 37;
+            // 
+            // textBoxPhoneNumber_KAA
+            // 
+            this.textBoxPhoneNumber_KAA.Location = new System.Drawing.Point(0, 407);
+            this.textBoxPhoneNumber_KAA.Name = "textBoxPhoneNumber_KAA";
+            this.textBoxPhoneNumber_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPhoneNumber_KAA.TabIndex = 36;
+            // 
+            // labelCPU_KAA
+            // 
+            this.labelCPU_KAA.AutoSize = true;
+            this.labelCPU_KAA.BackColor = System.Drawing.Color.MintCream;
+            this.labelCPU_KAA.Location = new System.Drawing.Point(3, 77);
+            this.labelCPU_KAA.Name = "labelCPU_KAA";
+            this.labelCPU_KAA.Size = new System.Drawing.Size(66, 13);
+            this.labelCPU_KAA.TabIndex = 34;
+            this.labelCPU_KAA.Text = "Процессор:";
+            // 
+            // labelDistributor_KAA
+            // 
+            this.labelDistributor_KAA.AutoSize = true;
+            this.labelDistributor_KAA.BackColor = System.Drawing.Color.MintCream;
+            this.labelDistributor_KAA.Location = new System.Drawing.Point(3, 12);
+            this.labelDistributor_KAA.Name = "labelDistributor_KAA";
+            this.labelDistributor_KAA.Size = new System.Drawing.Size(89, 13);
+            this.labelDistributor_KAA.TabIndex = 32;
+            this.labelDistributor_KAA.Text = "Производитель:";
+            // 
+            // textBoxDistributor_KAA
+            // 
+            this.textBoxDistributor_KAA.Location = new System.Drawing.Point(3, 28);
+            this.textBoxDistributor_KAA.Name = "textBoxDistributor_KAA";
+            this.textBoxDistributor_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistributor_KAA.TabIndex = 31;
+            // 
+            // labelCore_KAA
+            // 
+            this.labelCore_KAA.AutoSize = true;
+            this.labelCore_KAA.BackColor = System.Drawing.Color.MintCream;
+            this.labelCore_KAA.Location = new System.Drawing.Point(3, 152);
+            this.labelCore_KAA.Name = "labelCore_KAA";
+            this.labelCore_KAA.Size = new System.Drawing.Size(36, 13);
+            this.labelCore_KAA.TabIndex = 29;
+            this.labelCore_KAA.Tag = "";
+            this.labelCore_KAA.Text = "Ядра:";
+            // 
+            // numericUpDownRAM_KAA
+            // 
+            this.numericUpDownRAM_KAA.Location = new System.Drawing.Point(3, 293);
+            this.numericUpDownRAM_KAA.Name = "numericUpDownRAM_KAA";
+            this.numericUpDownRAM_KAA.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDownRAM_KAA.TabIndex = 27;
+            // 
+            // numericUpDownCore_KAA
+            // 
+            this.numericUpDownCore_KAA.Location = new System.Drawing.Point(3, 168);
+            this.numericUpDownCore_KAA.Name = "numericUpDownCore_KAA";
+            this.numericUpDownCore_KAA.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDownCore_KAA.TabIndex = 26;
+            // 
+            // textBoxAddress_KAA
+            // 
+            this.textBoxAddress_KAA.Location = new System.Drawing.Point(3, 357);
+            this.textBoxAddress_KAA.Name = "textBoxAddress_KAA";
+            this.textBoxAddress_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAddress_KAA.TabIndex = 25;
+            // 
+            // textBoxCPU_KAA
+            // 
+            this.textBoxCPU_KAA.Location = new System.Drawing.Point(3, 93);
+            this.textBoxCPU_KAA.Name = "textBoxCPU_KAA";
+            this.textBoxCPU_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCPU_KAA.TabIndex = 23;
+            // 
+            // textBoxSpeed_KAA
+            // 
+            this.textBoxSpeed_KAA.Location = new System.Drawing.Point(3, 234);
+            this.textBoxSpeed_KAA.Name = "textBoxSpeed_KAA";
+            this.textBoxSpeed_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSpeed_KAA.TabIndex = 21;
+            // 
+            // textBoxSeller_KAA
+            // 
+            this.textBoxSeller_KAA.Location = new System.Drawing.Point(3, 293);
+            this.textBoxSeller_KAA.Name = "textBoxSeller_KAA";
+            this.textBoxSeller_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSeller_KAA.TabIndex = 20;
+            // 
+            // labelSearch_KAA
+            // 
+            this.labelSearch_KAA.AutoSize = true;
+            this.labelSearch_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelSearch_KAA.Location = new System.Drawing.Point(357, 514);
+            this.labelSearch_KAA.Name = "labelSearch_KAA";
+            this.labelSearch_KAA.Size = new System.Drawing.Size(75, 25);
+            this.labelSearch_KAA.TabIndex = 19;
+            this.labelSearch_KAA.Text = "Найти:";
+            // 
+            // dataGridViewDistributors_KAA
+            // 
+            this.dataGridViewDistributors_KAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDistributors_KAA.Location = new System.Drawing.Point(145, 71);
+            this.dataGridViewDistributors_KAA.Name = "dataGridViewDistributors_KAA";
+            this.dataGridViewDistributors_KAA.Size = new System.Drawing.Size(916, 428);
+            this.dataGridViewDistributors_KAA.TabIndex = 17;
             // 
             // buttonDone_KAA
             // 
@@ -508,8 +493,23 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonInfo_KAA.Name = "buttonInfo_KAA";
             this.buttonInfo_KAA.Size = new System.Drawing.Size(119, 101);
             this.buttonInfo_KAA.TabIndex = 2;
+            this.toolTip_KAA.SetToolTip(this.buttonInfo_KAA, "О программе");
             this.buttonInfo_KAA.UseVisualStyleBackColor = false;
             this.buttonInfo_KAA.Click += new System.EventHandler(this.buttonInfo_KAA_Click);
+            // 
+            // buttonHelp_KAA
+            // 
+            this.buttonHelp_KAA.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonHelp_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.buttonHelp_KAA.ForeColor = System.Drawing.Color.Aqua;
+            this.buttonHelp_KAA.Image = global::Tyuiu.KarpovAA.Sprint7.Project.V12.Properties.Resources.information;
+            this.buttonHelp_KAA.Location = new System.Drawing.Point(1099, 255);
+            this.buttonHelp_KAA.Name = "buttonHelp_KAA";
+            this.buttonHelp_KAA.Size = new System.Drawing.Size(119, 99);
+            this.buttonHelp_KAA.TabIndex = 9;
+            this.toolTip_KAA.SetToolTip(this.buttonHelp_KAA, "Руководство пользователя");
+            this.buttonHelp_KAA.UseVisualStyleBackColor = false;
+            this.buttonHelp_KAA.Click += new System.EventHandler(this.buttonHelp_KAA_Click);
             // 
             // FormMain
             // 
@@ -517,14 +517,18 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1257, 558);
             this.Controls.Add(this.panelFull_KAA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 7 | Task Project | Вариант 12 | Карпов А. А.";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVM_KAA)).EndInit();
             this.panelFull_KAA.ResumeLayout(false);
             this.panelFull_KAA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistributors_KAA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCore_KAA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRAM_KAA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCore_KAA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistributors_KAA)).EndInit();
             this.ResumeLayout(false);
 
         }

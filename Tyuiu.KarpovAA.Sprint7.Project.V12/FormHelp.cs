@@ -16,5 +16,10 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
         {
             InitializeComponent();
         }
+
+        private void buttonOK_KAA_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
