@@ -24,7 +24,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 
         DataService ds = new DataService();
         
-        string pathPC = @"C:..\IVM.csv";
+        string pathPC = @"..\IVM.csv";
         string pathSeller = @"..\Distributors.csv";
 
 
