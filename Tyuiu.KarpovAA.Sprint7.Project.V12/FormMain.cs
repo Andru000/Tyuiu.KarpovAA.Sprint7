@@ -33,6 +33,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
 
         private void buttonFindDistributors_KAA_Click(object sender, EventArgs e)
         {
+            try
+            { 
             var data = ds.GetData(pathSeller);
             var searchText = textBoxFind_KAA.Text.ToLower();
             if (string.IsNullOrEmpty(searchText)) return;
@@ -61,9 +63,16 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
                     dataGridViewDistributors_KAA.Rows[r].Cells[c].Value = filteredDataArray[r][c];
                 }
             }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не найдено", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void buttonFind_KAA_Click(object sender, EventArgs e)
         {
+            try
+            { 
             var data = ds.GetData(pathPC);
             var searchText = textBoxFind_KAA.Text.ToLower();
             if (string.IsNullOrEmpty(searchText)) return;
@@ -91,6 +100,11 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
                 {
                     dataGridViewIVM_KAA.Rows[r].Cells[c].Value = filteredDataArray[r][c];
                 }
+            }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не найдено", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
