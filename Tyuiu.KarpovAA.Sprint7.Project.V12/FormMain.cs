@@ -133,6 +133,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
         private void buttonDistributors_KAA_Click(object sender, EventArgs e)
         {
 
+            buttonDelIVN_KAA.Visible = false;
+            buttonDistributor_KAA.Visible = true;
             dataGridViewIVM_KAA.Visible = false;
             dataGridViewDistributors_KAA.Visible = true;
             labelSearch_KAA.Visible = true;
@@ -236,7 +238,9 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             
             dataGridViewIVM_KAA.Visible = true;
             dataGridViewDistributors_KAA.Visible = false;
+            buttonDelIVN_KAA.Visible = true;
             labelSearch_KAA.Visible = true;
+            buttonDistributor_KAA.Visible = false;
             textBoxFind_KAA.Visible = true;
             buttonFind_KAA.Visible = true;
             buttonFindDistributors_KAA.Visible = false;
@@ -397,6 +401,44 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
         {
             FormHelp info = new FormHelp();
             info.ShowDialog();
+        }
+
+        private void buttonDelIVN_KAA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewIVM_KAA.RowCount != 0)
+            {
+                int valueDel = 0;
+                var res = MessageBox.Show($"{"Удалить данную строку?"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res == DialogResult.Yes) valueDel = 1;
+                if (valueDel == 1)
+                {
+                    int del = dataGridViewIVM_KAA.CurrentCell.RowIndex;
+                    dataGridViewIVM_KAA.Rows.Remove(dataGridViewIVM_KAA.Rows[del]);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Строка не выбрана", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonDistributor_KAA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewDistributors_KAA.RowCount != 0)
+            {
+                int valueDel = 0;
+                var res = MessageBox.Show($"{"Удалить данную строку?"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (res == DialogResult.Yes) valueDel = 1;
+                if (valueDel == 1)
+                {
+                    int del = dataGridViewDistributors_KAA.CurrentCell.RowIndex;
+                    dataGridViewDistributors_KAA.Rows.Remove(dataGridViewDistributors_KAA.Rows[del]);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Строка не выбрана", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

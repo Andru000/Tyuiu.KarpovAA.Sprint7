@@ -34,6 +34,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.textBoxFind_KAA = new System.Windows.Forms.TextBox();
             this.buttonDistributors_KAA = new System.Windows.Forms.Button();
             this.toolTip_KAA = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonInfo_KAA = new System.Windows.Forms.Button();
+            this.buttonHelp_KAA = new System.Windows.Forms.Button();
             this.saveFileDialog_KAA = new System.Windows.Forms.SaveFileDialog();
             this.buttonFind_KAA = new System.Windows.Forms.Button();
             this.buttonAddDistributor_KAA = new System.Windows.Forms.Button();
@@ -71,8 +73,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.labelSearch_KAA = new System.Windows.Forms.Label();
             this.dataGridViewDistributors_KAA = new System.Windows.Forms.DataGridView();
             this.buttonDone_KAA = new System.Windows.Forms.Button();
-            this.buttonInfo_KAA = new System.Windows.Forms.Button();
-            this.buttonHelp_KAA = new System.Windows.Forms.Button();
+            this.buttonDelIVN_KAA = new System.Windows.Forms.Button();
+            this.buttonDistributor_KAA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIVM_KAA)).BeginInit();
             this.panelFull_KAA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRAM_KAA)).BeginInit();
@@ -92,7 +94,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // 
             this.textBoxFind_KAA.BackColor = System.Drawing.Color.LavenderBlush;
             this.textBoxFind_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBoxFind_KAA.Location = new System.Drawing.Point(438, 509);
+            this.textBoxFind_KAA.Location = new System.Drawing.Point(556, 508);
             this.textBoxFind_KAA.Multiline = true;
             this.textBoxFind_KAA.Name = "textBoxFind_KAA";
             this.textBoxFind_KAA.Size = new System.Drawing.Size(379, 42);
@@ -111,11 +113,38 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonDistributors_KAA.UseVisualStyleBackColor = false;
             this.buttonDistributors_KAA.Click += new System.EventHandler(this.buttonDistributors_KAA_Click);
             // 
+            // buttonInfo_KAA
+            // 
+            this.buttonInfo_KAA.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.buttonInfo_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonInfo_KAA.Image = global::Tyuiu.KarpovAA.Sprint7.Project.V12.Properties.Resources.help;
+            this.buttonInfo_KAA.Location = new System.Drawing.Point(1099, 107);
+            this.buttonInfo_KAA.Name = "buttonInfo_KAA";
+            this.buttonInfo_KAA.Size = new System.Drawing.Size(119, 101);
+            this.buttonInfo_KAA.TabIndex = 2;
+            this.toolTip_KAA.SetToolTip(this.buttonInfo_KAA, "О программе");
+            this.buttonInfo_KAA.UseVisualStyleBackColor = false;
+            this.buttonInfo_KAA.Click += new System.EventHandler(this.buttonInfo_KAA_Click);
+            // 
+            // buttonHelp_KAA
+            // 
+            this.buttonHelp_KAA.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonHelp_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.buttonHelp_KAA.ForeColor = System.Drawing.Color.Aqua;
+            this.buttonHelp_KAA.Image = global::Tyuiu.KarpovAA.Sprint7.Project.V12.Properties.Resources.information;
+            this.buttonHelp_KAA.Location = new System.Drawing.Point(1099, 255);
+            this.buttonHelp_KAA.Name = "buttonHelp_KAA";
+            this.buttonHelp_KAA.Size = new System.Drawing.Size(119, 99);
+            this.buttonHelp_KAA.TabIndex = 9;
+            this.toolTip_KAA.SetToolTip(this.buttonHelp_KAA, "Руководство пользователя");
+            this.buttonHelp_KAA.UseVisualStyleBackColor = false;
+            this.buttonHelp_KAA.Click += new System.EventHandler(this.buttonHelp_KAA_Click);
+            // 
             // buttonFind_KAA
             // 
             this.buttonFind_KAA.BackColor = System.Drawing.Color.Gray;
             this.buttonFind_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonFind_KAA.Location = new System.Drawing.Point(823, 507);
+            this.buttonFind_KAA.Location = new System.Drawing.Point(941, 508);
             this.buttonFind_KAA.Name = "buttonFind_KAA";
             this.buttonFind_KAA.Size = new System.Drawing.Size(117, 42);
             this.buttonFind_KAA.TabIndex = 10;
@@ -137,7 +166,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // buttonStats_KAA
             // 
             this.buttonStats_KAA.BackColor = System.Drawing.Color.Gray;
-            this.buttonStats_KAA.Location = new System.Drawing.Point(222, 505);
+            this.buttonStats_KAA.Location = new System.Drawing.Point(319, 505);
             this.buttonStats_KAA.Name = "buttonStats_KAA";
             this.buttonStats_KAA.Size = new System.Drawing.Size(80, 46);
             this.buttonStats_KAA.TabIndex = 12;
@@ -159,9 +188,9 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // buttonAddIVM_KAA
             // 
             this.buttonAddIVM_KAA.BackColor = System.Drawing.Color.Gray;
-            this.buttonAddIVM_KAA.Location = new System.Drawing.Point(0, 505);
+            this.buttonAddIVM_KAA.Location = new System.Drawing.Point(3, 505);
             this.buttonAddIVM_KAA.Name = "buttonAddIVM_KAA";
-            this.buttonAddIVM_KAA.Size = new System.Drawing.Size(120, 46);
+            this.buttonAddIVM_KAA.Size = new System.Drawing.Size(117, 46);
             this.buttonAddIVM_KAA.TabIndex = 14;
             this.buttonAddIVM_KAA.Text = "Добавить ЭВМ";
             this.buttonAddIVM_KAA.UseVisualStyleBackColor = false;
@@ -181,7 +210,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // buttonFindDistributors_KAA
             // 
             this.buttonFindDistributors_KAA.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonFindDistributors_KAA.Location = new System.Drawing.Point(823, 515);
+            this.buttonFindDistributors_KAA.Location = new System.Drawing.Point(941, 516);
             this.buttonFindDistributors_KAA.Name = "buttonFindDistributors_KAA";
             this.buttonFindDistributors_KAA.Size = new System.Drawing.Size(108, 30);
             this.buttonFindDistributors_KAA.TabIndex = 16;
@@ -192,6 +221,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // panelFull_KAA
             // 
             this.panelFull_KAA.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelFull_KAA.Controls.Add(this.buttonDelIVN_KAA);
+            this.panelFull_KAA.Controls.Add(this.buttonDistributor_KAA);
             this.panelFull_KAA.Controls.Add(this.buttonFind_KAA);
             this.panelFull_KAA.Controls.Add(this.dataGridViewIVM_KAA);
             this.panelFull_KAA.Controls.Add(this.textBoxPrice_KAA);
@@ -461,7 +492,7 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             // 
             this.labelSearch_KAA.AutoSize = true;
             this.labelSearch_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.labelSearch_KAA.Location = new System.Drawing.Point(357, 514);
+            this.labelSearch_KAA.Location = new System.Drawing.Point(475, 516);
             this.labelSearch_KAA.Name = "labelSearch_KAA";
             this.labelSearch_KAA.Size = new System.Drawing.Size(75, 25);
             this.labelSearch_KAA.TabIndex = 19;
@@ -487,32 +518,27 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
             this.buttonDone_KAA.UseVisualStyleBackColor = false;
             this.buttonDone_KAA.Click += new System.EventHandler(this.buttonDone_KAA_Click);
             // 
-            // buttonInfo_KAA
+            // buttonDelIVN_KAA
             // 
-            this.buttonInfo_KAA.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.buttonInfo_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonInfo_KAA.Image = global::Tyuiu.KarpovAA.Sprint7.Project.V12.Properties.Resources.help;
-            this.buttonInfo_KAA.Location = new System.Drawing.Point(1099, 107);
-            this.buttonInfo_KAA.Name = "buttonInfo_KAA";
-            this.buttonInfo_KAA.Size = new System.Drawing.Size(119, 101);
-            this.buttonInfo_KAA.TabIndex = 2;
-            this.toolTip_KAA.SetToolTip(this.buttonInfo_KAA, "О программе");
-            this.buttonInfo_KAA.UseVisualStyleBackColor = false;
-            this.buttonInfo_KAA.Click += new System.EventHandler(this.buttonInfo_KAA_Click);
+            this.buttonDelIVN_KAA.BackColor = System.Drawing.Color.Gray;
+            this.buttonDelIVN_KAA.Location = new System.Drawing.Point(217, 505);
+            this.buttonDelIVN_KAA.Name = "buttonDelIVN_KAA";
+            this.buttonDelIVN_KAA.Size = new System.Drawing.Size(96, 46);
+            this.buttonDelIVN_KAA.TabIndex = 44;
+            this.buttonDelIVN_KAA.Text = "Удалить ЭВМ";
+            this.buttonDelIVN_KAA.UseVisualStyleBackColor = false;
+            this.buttonDelIVN_KAA.Click += new System.EventHandler(this.buttonDelIVN_KAA_Click);
             // 
-            // buttonHelp_KAA
+            // buttonDistributor_KAA
             // 
-            this.buttonHelp_KAA.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonHelp_KAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.buttonHelp_KAA.ForeColor = System.Drawing.Color.Aqua;
-            this.buttonHelp_KAA.Image = global::Tyuiu.KarpovAA.Sprint7.Project.V12.Properties.Resources.information;
-            this.buttonHelp_KAA.Location = new System.Drawing.Point(1099, 255);
-            this.buttonHelp_KAA.Name = "buttonHelp_KAA";
-            this.buttonHelp_KAA.Size = new System.Drawing.Size(119, 99);
-            this.buttonHelp_KAA.TabIndex = 9;
-            this.toolTip_KAA.SetToolTip(this.buttonHelp_KAA, "Руководство пользователя");
-            this.buttonHelp_KAA.UseVisualStyleBackColor = false;
-            this.buttonHelp_KAA.Click += new System.EventHandler(this.buttonHelp_KAA_Click);
+            this.buttonDistributor_KAA.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonDistributor_KAA.Location = new System.Drawing.Point(216, 511);
+            this.buttonDistributor_KAA.Name = "buttonDistributor_KAA";
+            this.buttonDistributor_KAA.Size = new System.Drawing.Size(97, 37);
+            this.buttonDistributor_KAA.TabIndex = 45;
+            this.buttonDistributor_KAA.Text = "Удалить дистрибьютора";
+            this.buttonDistributor_KAA.UseVisualStyleBackColor = false;
+            this.buttonDistributor_KAA.Click += new System.EventHandler(this.buttonDistributor_KAA_Click);
             // 
             // FormMain
             // 
@@ -580,6 +606,8 @@ namespace Tyuiu.KarpovAA.Sprint7.Project.V12
         private System.Windows.Forms.Label labelSpeed_KAA;
         private System.Windows.Forms.Label labelURL_KAA;
         private System.Windows.Forms.TextBox textBoxTitle_KAA;
+        private System.Windows.Forms.Button buttonDelIVN_KAA;
+        private System.Windows.Forms.Button buttonDistributor_KAA;
     }
 }
 
